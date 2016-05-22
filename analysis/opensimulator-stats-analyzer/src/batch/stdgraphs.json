@@ -1,0 +1,123 @@
+{
+  "graphs": [
+    {
+      "select" : "*CPU*",
+      "out" : "cpu.png"
+    },
+    {
+      "select" : "server.processor.Threads",
+      "out" : "threads.png"
+    },
+    {
+      "select" : "*BuiltinThreadpoolWorkerThreadsAvailable",
+      "out" : "builtin-threadpool-worker-threads-available-count.png"
+    },
+    {
+      "select" : "*BuiltinThreadpoolIOCPThreadsAvailable",
+      "out" : "builtin-threadpool-iocp-threads-available-count.png"
+    },
+    {
+      "select" : "*STPInUseThreads",
+      "out" : "stp-in-use-threads.png"
+    },
+    {
+      "select" : "*STPWorkItemsWaiting",
+      "out" : "stp-work-items-waiting.png"
+    },
+    {
+      "select" : "*JobsWaiting",
+      "out" : "jobs-waiting.png"
+    },
+    {
+      "select" : "*RootAgents",
+      "action" : "sum",
+      "out" : "rootagents.png"
+    },
+    {
+      "select" : "*RootAgents",
+      "out" : "rootagents-per-region.png"
+    },
+    {
+      "select" : "*FrameTime",
+      "out" : "frame-time.png"
+    },
+    {
+      "select" : "*AgentTime",
+      "out" : "agent-time.png"
+    },
+    {
+      "select" : "*PhysicsTime",
+      "out" : "physics-time.png"
+    },
+    {
+      "select" : "*PhysicsFPS",
+      "out" : "physics-fps.png"
+    },
+    {
+      "select" : "*OtherTime",
+      "out" : "other-time.png"
+    },
+    {
+      "select" : "*SimSpareMS",
+      "out" : "spare-time.png"
+    },
+    {
+      "select" : "*AgentUpdates",      
+      "out" : "agent-update-per-region.png"
+    },
+    {
+      "select" : "*AgentUpdates",      
+      "action" : "sum",
+      "out" : "total-agent-updates.png"
+    },
+    {
+      "select" : "*IncomingUDPReceivesCount",
+      "out" : "incoming-udp-receives.png"
+    },
+    {
+      "select" : "*IncomingPacketsResentCount",
+      "out" : "incoming-resent-count.png"
+    },
+    {
+      "select" : "*InboxPacketsCount",
+      "out" : "inbox-packets-count.png"
+    },
+    {
+      "select" : "*OutgoingUDPSendsCount",
+      "out" : "outgoing-udp-sends-count.png"
+    },
+    {
+      "select" : "*OutgoingUDPSendsCount",
+      "out" : "outgoing-udp-sends-count.png"
+    },
+    {
+      "select" : "*OutgoingPacketsQueuedCount",
+      "out" : "outgoing-packets-queued-count.png"
+    },
+    {
+      "select" : "*OutgoingPacketsResentCount",
+      "out" : "outgoing-resent-count.png"
+    },
+    {
+      "select" : "*ProcessTime",
+      "out" : "process-time.png"
+    },
+    {
+      "select" : "*OQRERequestsWaiting",
+      "out" : "oqre-requests-waiting-count.png"
+    },
+    {
+      "select" : "*HTTPRequestsServed",
+      "out" : "http-requests-served-count.png"
+    },
+    {
+      "select" : "*HTTPRequestsMade",
+      "out" : "http-requests-made-count.png"
+    },
+    {
+      "select" : "inventory*RequestsMade",
+      "out" : "inventory-http-requests-out-count.png"
+    }
+
+  ]
+}

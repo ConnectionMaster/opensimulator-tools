@@ -1,8 +1,8 @@
 <?php
 
 require_once 'Console/CommandLine.php';
-require_once "../../config.php";
-require_once "../../utils.php";
+require_once "../../../config.php";
+require_once "../../../utils.php";
 require_once "$IP/connectors/useraccounts-service-connector.php";
 
 ############
@@ -24,6 +24,7 @@ try
 catch (Exception $e)
 {
     $parser->displayError($e->getMessage());
+    exit(1);
 }
 
 $firstName = $params->args['firstName'];

@@ -49,11 +49,12 @@ status  - get the current status of the component.
 
 There are also a few optional switches
 
--n, --noattach
+-a, --attach
 
-Do not automatically attach to the screen component once it has started.
+Only valid for start and restart commands.  If set then osimctrl automatically
+attaches you to the screen of the [re]started component.
 
--a, --autorestart
+-r, --autorestart
 
 If a component fails, then automatically restart it.  If you use this option
 then you can only stop the component with the stop command instead of manually
@@ -61,6 +62,11 @@ attaching to the screen and shutting it down (since the surrounding loop will
 simply start it again).  Alternatively, you can send the signal SIGUSR1 to the
 bash script which acts as the simple loop.  This will be a child process from
 the screen instance).
+
+-v, --verbose
+
+If set then osimctrl prints out each command that it executes and other information.  
+Useful for debugging
 
 -h. --help
 
